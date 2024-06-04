@@ -1,0 +1,211 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: linear-gradient(to bottom, #000120, #17001C 50%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.main_container {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.star {
+    position: absolute;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #FFF;
+    border-radius: 50%;
+    animation-name: blink;
+    animation-iteration-count: infinite;
+}
+
+.house {
+    position: absolute;
+    bottom: 7rem;
+    width: 20rem;
+    height: 20rem;
+    background: #000000;
+    z-index: 10;
+}
+
+.house .roof {
+    position: absolute;
+    top: -10rem;
+    left: -5rem;
+    border-left: 15rem solid transparent;
+    border-right: 15rem solid transparent;
+    border-bottom: 10rem solid #000000;
+    z-index: 10;
+}
+
+button {
+    width: 6rem;
+    height: 6rem;
+    background: #131313;
+    border: 0.5rem solid#000000;
+}
+
+.right_window {
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    transition: background-color 2s;
+    z-index: 10;
+}
+
+.left_window {
+    position: absolute;
+    right: 10%;
+    top: 10%;
+    transition: background-color 2s;
+    z-index: 10;
+}   
+
+.horizontal_border {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 6rem;
+    height: 0.5rem;
+    background: #000000;
+    z-index: 10;
+}
+
+.vertical_border {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0.5rem;
+    height: 6rem;
+    background: #000000;
+    z-index: 10;
+}
+
+.door {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4.5rem;
+    height: 8rem;
+    background: #000000;
+    border:solid #2B2B2B;
+    border-bottom: none;
+    z-index: 10;
+}
+
+.inner_door {
+    position:absolute;
+    bottom: 0;
+    background: #000000;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4.2rem;
+    height: 7.85rem;
+    border:solid #2B2B2B;
+    border-bottom: none;
+    z-index: 10;
+}
+
+.door_knob {
+    position: absolute;
+    bottom: 3.5rem;
+    left: 80%;
+    transform: translateX(-50%);
+    width: 0.5rem;
+    height: 0.5rem;
+    background: #000000;
+    border-radius: 50%;
+    border:solid #2B2B2B;
+    z-index: 10;
+}
+
+.ground {
+    position: absolute;
+    bottom: 0;
+    height: 7rem;
+    width: 100%;
+    background: #000000;
+    z-index: 10;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.fade-out {
+    transition: background-color 2s;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+
+.moon {
+    background: #FDFF8C;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    z-index: 10;
+}
+
+.moon_sky {
+    background: #000120;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    position: absolute;
+    top: -1%;
+    right: 4%;
+    z-index: 11;
+}
+
+/* .meteor {
+    position: absolute;
+    left: 10%;
+    width: 1rem;
+    height: 1rem;
+    background-color: #FFF;
+    border-radius: 50%;
+    opacity: 0;
+    animation-name: move, appear;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    z-index: 1;
+}
+
+.meteor::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1000%;
+    height: 100%;
+    background: linear-gradient(to bottom left, #FFF, transparent);
+    transform: rotate(45deg) translateX(-100%);
+    z-index: -1;
+}
+
+@keyframes appear {
+    0% { opacity: 0; }
+    1% { opacity: 1; }
+    100% { opacity: 1; }
+}
+
+@keyframes move {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(100vw, 100vh); }
+} */
