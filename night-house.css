@@ -1,0 +1,130 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.407);
+}
+
+.card {
+    position: relative;
+    width: 80%;
+    height: 80%;
+    background: linear-gradient(to bottom, #000120, #17001C 50%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.main_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.star {
+    position: absolute;
+    width: 0.2rem;
+    height: 0.2rem;
+    background-color: #FFF;
+    border-radius: 50%;
+    animation-name: blink;
+    animation-iteration-count: infinite;
+    z-index: 3;
+}
+
+.fade-out {
+    transition: background-color 2s;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.moon_sky {
+    position: absolute;
+    top: -1%;
+    right: 5%;
+    width: 8rem;
+    height: 8rem;
+    background: #000120;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.moon {
+    background: #FDFF8C;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 4%;
+    right: 2%;
+    z-index: 9;
+}
+
+.ground {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+    background: #000000;
+    z-index: 10;
+}
+
+.house {
+    position: absolute;
+    bottom: 10%;
+    width: 12rem;
+    height: 12rem;
+    background: #000000;
+    z-index: 10;
+}
+
+.door {
+    position: absolute;
+    bottom: 0;
+    width: 3rem;
+    height: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #000000;
+    border: 0.5px solid #2B2B2B;
+    border-bottom: none;
+    z-index: 11;
+}
+
+.inner_door {
+    position: absolute;
+    bottom: 0;
+    width: 2.6rem;
+    height: 4.8rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #000000;
+    border: 0.5px solid #2B2B2B;
+    border-bottom: none;
+    z-index: 12;
+}
+
+.door_knob {
+    position: absolute;
+    bottom: 2.5rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    left: 80%;
+    transform: translateX(-50%);
+    background: #000000;
+    border-radius: 50%;
+    border: 0.8px solid #2B2B2B;
+    z-index: 13;
+}
