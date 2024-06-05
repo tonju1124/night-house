@@ -1,4 +1,5 @@
-body, html {
+body,
+html {
     margin: 0;
     padding: 0;
     display: flex;
@@ -44,9 +45,17 @@ body, html {
 }
 
 @keyframes blink {
-    0% { opacity: 1; }
-    50% { opacity: 0; }
-    100% { opacity: 1; }
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .moon_sky {
@@ -132,7 +141,7 @@ button:hover {
     top: 10%;
     transition: background-color 2s;
     z-index: 10;
-}   
+}
 
 .horizontal_border {
     position: absolute;
@@ -194,3 +203,4 @@ button:hover {
     border: 0.8px solid #2B2B2B;
     z-index: 13;
 }
+
