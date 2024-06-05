@@ -13,3 +13,24 @@ function generateStars(numStars) {
 
 generateStars(300);
 
+document.getElementById('left_window').addEventListener('click', function () {
+    var window = this;
+    window.style.backgroundColor = '#FCFF7F';
+    window.classList.add('fade-out');
+
+    setTimeout(function () {
+        window.style.backgroundColor = '';
+        window.classList.remove('fade-out');
+    }, 5000);
+});
+
+document.getElementById('right_window').addEventListener('click', function () {
+    var window = this;
+    window.style.backgroundColor = '#FCFF7F';
+    window.classList.add('fade-out');
+
+    setTimeout(function () {
+        window.style.backgroundColor = '';
+        window.classList.remove('fade-out');
+    }, 5000);
+});
