@@ -204,3 +204,19 @@ button:hover {
     z-index: 13;
 }
 
+.cloud {
+    position: absolute;
+    width: 10rem;
+    height: 3rem;
+    animation: moveCloud 50s linear forwards;
+    z-index: 15;
+}
+
+@keyframes moveCloud {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(800%);
+    }
+}

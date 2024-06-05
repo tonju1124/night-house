@@ -34,3 +34,30 @@ document.getElementById('right_window').addEventListener('click', function () {
         window.classList.remove('fade-out');
     }, 5000);
 });
+
+var cloudSVGs = ["svg/cloud1.svg", "svg/cloud2.svg", "svg/cloud3.svg", "svg/cloud4.svg", "svg/cloud5.svg"];
+var cardHeight = document.querySelector('.card').offsetHeight;
+
+function addCloud() {
+    var randomIndex = Math.floor(Math.random() * cloudSVGs.length);
+    var cloudSVG = cloudSVGs[randomIndex]; // random cloud svg
+
+    var cloud = document.createElement("img");
+    cloud.src = cloudSVG;
+    cloud.className = "cloud";
+
+    var randomTop = Math.random() * (0.4 * cardHeight); // random top position from 0 to 40% of card height
+    cloud.style.top = randomTop + "px";
+
+    document.querySelector('.card').appendChild(cloud);
+    setTimeout(function() {
+        if (document.querySelector('.card').contains(cloud)) {
+            document.querySelector('.card').removeChild(cloud);
+        }
+    }, 52000); //remove cloud after 52 seconds
+}
+
+setInterval(function() {
+    var randomDelay = Math.random() * 4000; // random delay 0 to 4 seconds
+    setTimeout(addCloud, randomDelay);
+}, 6000);
