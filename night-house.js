@@ -54,7 +54,7 @@ function addCloud() {
         if (document.querySelector('.card').contains(cloud)) {
             document.querySelector('.card').removeChild(cloud);
         }
-    }, 52000); //remove cloud after 52 seconds
+    }, 58000); //remove cloud after 58 seconds
 }
 
 setInterval(function () {

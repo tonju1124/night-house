@@ -87,7 +87,7 @@ html {
     width: 100%;
     height: 10%;
     background: #000000;
-    z-index: 10;
+    z-index: 20;
 }
 
 .house {
@@ -96,7 +96,7 @@ html {
     width: 12rem;
     height: 12rem;
     background: #000000;
-    z-index: 10;
+    z-index: 20;
 }
 
 .roof {
@@ -108,7 +108,7 @@ html {
     border-left: 8rem solid transparent;
     border-right: 8rem solid transparent;
     border-bottom: 5rem solid #000000;
-    z-index: 10;
+    z-index: 20;
 }
 
 button {
@@ -119,7 +119,7 @@ button {
     background: #121212;
     border: 1px solid #000000;
     border-radius: 0.5rem;
-    z-index: 10;
+    z-index: 20;
 
 }
 
@@ -132,7 +132,7 @@ button:hover {
     left: 10%;
     top: 10%;
     transition: background-color 2s;
-    z-index: 10;
+    z-index: 20;
 }
 
 .left_window {
@@ -140,7 +140,7 @@ button:hover {
     right: 10%;
     top: 10%;
     transition: background-color 2s;
-    z-index: 10;
+    z-index: 20;
 }
 
 .horizontal_border {
@@ -151,7 +151,7 @@ button:hover {
     width: 3rem;
     height: 0.4rem;
     background: #000000;
-    z-index: 10;
+    z-index: 20;
 }
 
 .vertical_border {
@@ -162,7 +162,7 @@ button:hover {
     width: 0.4rem;
     height: 3rem;
     background: #000000;
-    z-index: 10;
+    z-index: 20;
 }
 
 .door {
@@ -175,7 +175,7 @@ button:hover {
     background: #000000;
     border: 0.5px solid #2B2B2B;
     border-bottom: none;
-    z-index: 11;
+    z-index: 21;
 }
 
 .inner_door {
@@ -188,7 +188,7 @@ button:hover {
     background: #000000;
     border: 0.5px solid #2B2B2B;
     border-bottom: none;
-    z-index: 12;
+    z-index: 22;
 }
 
 .door_knob {
@@ -201,14 +201,14 @@ button:hover {
     background: #000000;
     border-radius: 50%;
     border: 0.8px solid #2B2B2B;
-    z-index: 13;
+    z-index: 23;
 }
 
 .cloud {
     position: absolute;
     width: 10rem;
     height: 3rem;
-    animation: moveCloud 50s linear forwards;
+    animation: moveCloud 55s linear forwards;
     z-index: 15;
 }
 
