@@ -35,7 +35,7 @@ document.getElementById('right_window').addEventListener('click', function () {
     }, 5000);
 });
 
-var cloudSVGs = ["svg/cloud1.svg", "svg/cloud2.svg", "svg/cloud3.svg", "svg/cloud4.svg", "svg/cloud5.svg"];
+var cloudSVGs = ["svg/cloud1.svg", "svg/cloud2.svg", "svg/cloud3.svg", "svg/cloud4.svg", "svg/cloud5.svg", "svg/cloud6.svg", "svg/cloud7.svg", "svg/cloud8.svg"];
 var cardHeight = document.querySelector('.card').offsetHeight;
 
 function addCloud() {
@@ -50,14 +50,14 @@ function addCloud() {
     cloud.style.top = randomTop + "px";
 
     document.querySelector('.card').appendChild(cloud);
-    setTimeout(function() {
+    setTimeout(function () {
         if (document.querySelector('.card').contains(cloud)) {
             document.querySelector('.card').removeChild(cloud);
         }
     }, 52000); //remove cloud after 52 seconds
 }
 
-setInterval(function() {
+setInterval(function () {
     var randomDelay = Math.random() * 4000; // random delay 0 to 4 seconds
     setTimeout(addCloud, randomDelay);
 }, 6000);
