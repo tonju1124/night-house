@@ -189,7 +189,20 @@ button:hover {
     border: 0.5px solid #2B2B2B;
     border-bottom: none;
     z-index: 22;
+    transition: all 0.3s ease-in-out;
 }
+
+.inner_door:hover {
+    background: #FFF;
+    cursor: pointer;
+}
+
+.inner_door:hover ~ .door_knob{
+    background: #FFF;
+    cursor: pointer;
+    border: none;
+}
+
 
 .door_knob {
     position: absolute;
@@ -202,6 +215,7 @@ button:hover {
     border-radius: 50%;
     border: 0.8px solid #2B2B2B;
     z-index: 23;
+    transition: all 0.3s ease-in-out;
 }
 
 .cloud {
