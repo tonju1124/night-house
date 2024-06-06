@@ -1,0 +1,171 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+}
+
+.card {
+    position: relative;
+    width: 80%;
+    height: 80%;
+    background: rgb(110, 110, 110);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.main_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.bed {
+    position: absolute;
+    width: 25rem;
+    height: 2rem;
+    background-color: #000000;
+    left: 0;
+    bottom: 5%;
+    border-radius: 10px;
+    z-index: 5;
+}
+
+.bedleg_start {
+    position: absolute;
+    width: 1rem;
+    height: 3rem;
+    background-color: #000000;
+    left: 0;
+    top: 60%;
+    z-index: 5;
+}
+
+.bedleg_end {
+    position: absolute;
+    width: 1.6rem;
+    height: 3rem;
+    background-color: #000000;
+    right: 0;
+    top: 60%;
+    z-index: 5;
+}
+
+.bed_head {
+    position: absolute;
+    width: 1rem;
+    height: 7rem;
+    background-color: #000000;
+    left: 0;
+    bottom: 0;
+    z-index: 4;
+    border-radius: 10px;
+}
+
+.bed_body {
+    position: absolute;
+    width: 24.6rem;
+    height: 1rem;
+    background-color: #2d2d2d;
+    left: 0;
+    bottom: 100%;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.pillow {
+    position: absolute;
+    width: 4rem;
+    height: 1rem;
+    background-color: #ffffff;
+    left: 1.5%;
+    bottom: 12%;
+    border-radius: 10px;
+    z-index: 4;
+}
+
+.window {
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    background-color: #000120;
+    top: 30%;
+    border: 8px solid #000000;
+    border-radius: 10px;
+    z-index: 5;
+}
+
+.horizontal_border {
+    position: absolute;
+    width: 10rem;
+    height: 0.6rem;
+    background-color: #000000;
+    top: 48%;
+    z-index: 5;
+}
+
+.vertical_border {
+    position: absolute;
+    width: 0.6rem;
+    height: 10rem;
+    background-color: #000000;
+    left: 48%;
+    z-index: 5;
+}   
+
+.star {
+    position: absolute;
+    width: 0.2rem;
+    height: 0.2rem;
+    background-color: #FFF;
+    border-radius: 50%;
+    animation-name: blink;
+    animation-iteration-count: infinite;
+    z-index: 1;
+}
+
+.fade-out {
+    transition: background-color 2s;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.clouds {
+    position: absolute;
+    right: 0;
+    width: 1rem;
+    height: 0.8rem;
+    animation: moveCloud 5s linear forwards;
+    z-index: 2;
+    opacity: 0.8;
+}
+
+@keyframes moveCloud {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(800%);
+    }
+}
