@@ -193,12 +193,12 @@ button:hover {
 }
 
 .inner_door:hover {
-    background: #FFF;
+    background: #b3b3b3;
     cursor: pointer;
 }
 
 .inner_door:hover ~ .door_knob{
-    background: #FFF;
+    background: #b3b3b3;
     cursor: pointer;
     border: none;
 }
@@ -225,6 +225,12 @@ button:hover {
     animation: moveCloud 55s linear forwards;
     z-index: 15;
     opacity: 0.8;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    pointer-events: none;
 }
 
 @keyframes moveCloud {
