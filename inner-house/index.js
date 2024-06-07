@@ -13,7 +13,7 @@ function generateStars(numStars) {
     }
 }
 
-generateStars(100);
+generateStars(10);
 
 var cloudSVGs = ["svg/cloud1.svg", "svg/cloud2.svg", "svg/cloud3.svg", "svg/cloud4.svg", "svg/cloud5.svg", "svg/cloud6.svg", "svg/cloud7.svg", "svg/cloud8.svg"];
 var cardHeight = document.querySelector('.window').offsetHeight;
@@ -30,7 +30,7 @@ function addCloud() {
 
     var cloud = document.createElement("img");
     cloud.src = cloudSVG;
-    cloud.className = "cloud";
+    cloud.className = "clouds";
 
     var randomTop = Math.random() * windowHeight;
     cloud.style.top = randomTop + "px";
