@@ -13,6 +13,22 @@ function generateStars(numStars) {
 
 generateStars(300);
 
+function addStarsToMoonSky(numStars) {
+    var moonSky = document.querySelector('.moon_sky');
+
+    for (var i = 0; i < numStars; i++) {
+        var star = document.createElement('div');
+        star.className = 'star';
+
+        star.style.top = Math.random() * moonSky.offsetHeight + 'px';
+        star.style.left = Math.random() * moonSky.offsetWidth + 'px';
+        star.style.animationDuration = 5 + Math.random() * 10 + 's';
+        moonSky.appendChild(star);
+    }
+}
+
+addStarsToMoonSky(10);
+
 document.getElementById('left_window').addEventListener('click', function () {
     var window = this;
     window.style.backgroundColor = '#FCFF7F';
